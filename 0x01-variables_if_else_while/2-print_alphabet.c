@@ -10,6 +10,6 @@ int main(void)
 char low;
 for (low = 'a'; low <= 'z'; low++)
 putchar(low);
-putchar (‘\n’);
+printf("\n");
 return (0);
 }
