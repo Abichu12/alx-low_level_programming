@@ -1,4 +1,4 @@
-#inlude <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -12,7 +12,7 @@ int k;
 char low;
 for (k = '0'; k <=9; k++)
 putchar(k);
-for (low = 'a';low <= 'f';low++)
+for (low = 'a'; low <= 'f'; low++)
 putchar(low);
 putchar('\n');
 return(0);
