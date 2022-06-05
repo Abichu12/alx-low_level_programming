@@ -9,15 +9,16 @@
  */
 int main(void)
 {
-int d;
+  int d,e;
 for (d = 0; d < 90; d++)
 {
-for ()
+  for (e = 0; e < 90; e++ )
 {
-putchar((d / 10) + '0');
 putchar((d % 10) + '0');
+putchar((e % 10) + '0');
 }
-if (d != 89)
+if (d == 9 && e == 9)
+continue;
 }
 putchar(',');
 putchar(' ');
