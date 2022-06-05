@@ -10,14 +10,14 @@
 int main(void)
 {
 int d, e;
-for (d = 0; d < 90; d++)
+for (d = 0; d < 9; d++)
 {
-for (e = 0; e < 90; e++ )
+for (e = d + 1; e < 10; e++ )
 {
 putchar((d % 10) + '0');
 putchar((e % 10) + '0');
 }
-if (d == 9 && e == 9)
+if (d == 8 && e == 9)
 continue;
 }
 putchar(',');
