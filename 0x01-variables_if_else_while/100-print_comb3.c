@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-  int d,e;
+int d, e;
 for (d = 0; d < 90; d++)
 {
-  for (e = 0; e < 90; e++ )
+for (e = 0; e < 90; e++ )
 {
 putchar((d % 10) + '0');
 putchar((e % 10) + '0');
