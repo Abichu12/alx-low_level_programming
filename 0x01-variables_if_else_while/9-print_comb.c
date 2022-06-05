@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *main
- *
- *Return: ALways 0
- */
+*main - Entry point
+*
+*Return: ALways 0
+*/
 int main(void)
 {
-int d;  
+int d;
 for (d = '0'; d <= '9'; d++)
 {
 putchar(d);
