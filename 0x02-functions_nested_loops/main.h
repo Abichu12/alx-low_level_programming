@@ -1,5 +1,5 @@
-#ifndef 'main.h'
-#define 'main.h'
+#ifndef abichu_h
+#define abichu_h
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
