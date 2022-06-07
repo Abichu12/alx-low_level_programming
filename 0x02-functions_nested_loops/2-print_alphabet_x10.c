@@ -9,7 +9,7 @@ char alp;
 while (count++ <= 9)
 {
 for (alp = 'a'; alp <= 'z'; alp++)
-putchar(alp);
+_putchar(alp);
 _putchar('\n');
 }
 }
