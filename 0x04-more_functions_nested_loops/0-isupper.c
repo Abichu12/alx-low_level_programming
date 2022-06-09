@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 /**
 * _isupper - check for upper case
-* @a: character to be checked
+* @c: character to be checked
 *
 * Return: 1 if upper case, 0 if lower case
 */
