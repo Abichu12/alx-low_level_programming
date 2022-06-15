@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*rot13 - function that encodes a string using rot13.
+* *rot13 - function that encodes a string using rot13.
 * @s: pointer pointed to the variable s
-* Return: Pointer P 
-*Update V2.0 : using Pointers
+* Return: Pointer P
+* Update V2.0 : using Pointers
 */
 char *rot13(char *s)
 {
