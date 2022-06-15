@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
 * strcat - Concatenates the string pointed to by @src
@@ -7,6 +8,7 @@
 * Return: A pointer to the destination string @dest.
 */
 char *strcat(char *dest, const char *src)
+int main(void)
 {
 int index = 0, dest_len = 0;
 while (dest[index++])
