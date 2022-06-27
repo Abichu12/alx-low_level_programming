@@ -24,7 +24,7 @@ size1++;
 while (*(s2 + size2))
 size2++;
 /* a pointer pointed to the memory area allocation*/
-p = malloc((size1 + size2) + 1);
+p = malloc((size1 + size2)+1);
 if (p == NULL)
 return (NULL);
 i = 0;
