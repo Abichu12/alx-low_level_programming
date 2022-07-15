@@ -2,41 +2,31 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* _strlen - the length of a string
+* add_node - new node
+* @head: head of list_t
 * @str: string to be searched
 *
 * Return: length of the string
 */
-unsigned int _strlen(char *str)
-{
-unsigned int i;
-for (i = 0; str[i]; i++)
-;
-return (i);
-}
-/**
-* add_node - add a node to the beginning
-* @head: double pointer to the head
-* @str: string to add to the new node
-*
-* Return: pointer to the new node .
-*/
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *newnode;
-if (str == NULL)
+char *dup;
+int len;
+list_t *new;
+new = malloc(sizeof(list_t));
+if (new == NULL)
 return (NULL);
-newnode = (list_t *)malloc(sizeof(list_t));
-if (newnode == NULL)
-return (NULL);
-newnode->str = strdup(str);
-if (newnode->str == NULL)
+dup = strdup(str);
+if (dup == NULL)
 {
-free(newnode);
+free(new);
 return (NULL);
 }
-newnode->len = _strlen(newnode->str);
-newnode->next = *head;
-*head = newnode;
-return (newnode);
+for (len = 0; str[len];)
+len++;
+new->str = dup;
+new->len = len;
+new->next = *head;
+*head = new;
+return (new);
 }
