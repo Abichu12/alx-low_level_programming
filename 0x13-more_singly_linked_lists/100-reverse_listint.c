@@ -1,24 +1,23 @@
 #include "lists.h"
 /**
-* reverse_listint - Entry Pnt
-* @head: head
-* Return: 0
+* reverse_listint - Reverses a listint_t list
+* @head: A pointer to the address 
+*
+* Return: A pointer
 */
 listint_t *reverse_listint(listint_t **head)
 {
-listint_t *copy;
-listint_t *temp;
-if (*head == NULL)
+listint_t *ahead, *behind;
+if (head == NULL || *head == NULL)
 return (NULL);
-copy = *head;
-temp = NULL;
-while (*head != NULL)
+behind = NULL;
+while ((*head)->next != NULL)
 {
-copy = (*head)->next;
-(*head)->next = temp;
-temp = *head;
-*head = copy;
+ahead = (*head)->next;
+(*head)->next = behind;
+behind = *head;
+*head = ahead;
 }
-*head = temp;
+(*head)->next = behind;
 return (*head);
 }
